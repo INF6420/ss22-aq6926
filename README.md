@@ -8,7 +8,7 @@ Below are wireframe layouts and navagation ideas for my portfolio website.
 
 #### <b> Wireframe #1-Home Page </b>
 
-![Wireframe For Home Page](wireframes\homepage-wireframe-scaled.jpg)
+![Wireframe For Home Page](wireframes/homepage-wireframe-scaled.jpg)
 
 <b>Header </b>-will include my name followed by navigation menu.
 
@@ -21,7 +21,7 @@ Below are wireframe layouts and navagation ideas for my portfolio website.
 
 #### <b> Wireframe #2-About Me Page </b>
 
-![Wireframe For Home Page](wireframes\aboutme-wireframe-scaled.jpg)
+![Wireframe For Home Page](wireframes/aboutme-wireframe-scaled.jpg)
 
 
 <b>Header</b>-Name/logo
@@ -34,7 +34,7 @@ Below are wireframe layouts and navagation ideas for my portfolio website.
 
 #### <b>Wireframe #3 Education </b>
 
-![Wireframe of My Education Page](wireframes\education-wireframe-scaled.jpg)
+![Wireframe of My Education Page](wireframes/education-wireframe-scaled.jpg)
 
 <b>Header </b>-will include my name 
 
@@ -46,7 +46,7 @@ Below are wireframe layouts and navagation ideas for my portfolio website.
 
 #### <b>Wireframes #4 My MLIS Portfolio Page </b>
 
-![Wireframe of My MLIS Page](wireframes\mlis-portfolio-wireframe.jpg)
+![Wireframe of My MLIS Page](wireframes/mlis-portfolio-wireframe.jpg)
 
 <b>Header </b>-will include my name 
 
