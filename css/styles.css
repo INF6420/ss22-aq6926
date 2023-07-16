@@ -169,13 +169,6 @@ footer {
   flex-grow: 1;
   padding: 2rem;
 
-
-.polaroid {
-  background-color: #fff;
-  padding: 1rem 1rem 4rem;
-  box-shadow: 5px 8px 6px 3px #888888;
-}
-
 .img-polaroid {
  width:100%;
 }
@@ -296,6 +289,11 @@ text-align: center;
   margin-top: 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   }
+/* TWO COLUMN FLEXBOX */
+  .two-column div {
+    flex:1;
+  border:2px solid grey;
+  flex-direction:row;
 
 
 .portfolio-card a:link {
