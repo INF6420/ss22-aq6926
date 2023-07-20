@@ -211,11 +211,21 @@ text-decoration: none;
     .flex-container-left { 
       display: flex;
       flex-wrap: wrap;
+      flex-direction: column;
 
+    }
 
-      /* About Page*/
+      .resume-container1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+      }
   
-    } 
+ .resume-side1 {
+  min-width:100%;
+  margin: auto;
+ }
     .index-image {
      min-width:100%;
      margin: auto;
@@ -223,10 +233,34 @@ text-decoration: none;
     }
      
     .polaroid {
-      min-width:100%;
+    width: 200px;
      margin: auto;
+     height: auto;
+
     }
-}
+
+    .polaroid-portfolio-page { 
+
+      width: 225px; 
+
+      margin: auto; 
+
+      height: auto;
+    }
+
+  }
+    @media screen and (max-width: 820px) {
+    
+      footer {
+
+    } 
+  
+  } 
+
+
+
+
+
 
  
 
@@ -295,19 +329,16 @@ a:active {
 
   max-height: 100%; 
   max-width: 960px; 
-
   box-sizing: border-box;
   height: 60px; 
   border-top: 1px solid #333333;
-  margin-top: 30 px;
- 
 
 } 
 
 .footer-text {
 
-  font-size: 80%; 
-  color: gray; 
+  font-size: 90%; 
+  color: #261f17; 
   text-align: center;
   margin-top: 30px;
 }
@@ -499,17 +530,32 @@ font-weight: 600;
   background-color: #fff;
   padding: 1rem 1rem 4rem;
   box-shadow: 5px 8px 6px 3px #888888;
+  width: 225px;
+  height: auto;
+  margin: auto;
 }
 
+.polaroid-portfolio-page{
+  background-color: #e4e2e2;
+  padding: 1rem 1rem 4rem;
+  box-shadow: 0px 8px 6px 3px #888888;
+  padding:20px;
+  max-width: 100%;
+}
+
+
+
 .img-polaroid {
- width:225px;
- max-width: 100%;
+ width:220;
+  max-width:100%;
  margin: auto;
+ border-color: 1px solid #333333;
 }
 
 figcaption {
   color: #000;
   text-align: center;
+  font-size: 75%;
 }
 
 
@@ -541,9 +587,7 @@ figcaption {
 
 } 
 
-list-style-type: none; /* Remove bullets */
-padding: 0; /* Remove padding */
-margin: 0; /* Remove margins */
+
 
 
 
