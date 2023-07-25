@@ -14,84 +14,15 @@ body {
 
   font-family: Arial, Helvetica, sans-serif; 
 
-  font: normal 16px/1.5 Arial, sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5;
+  font-weight: normal;
 
   color: #333333; 
 
   background-color: #A5A9B0; 
 
 } 
-
- 
-
-.content { 
-
-  max-width:960px; 
-
-  margin: auto; 
-
-  margin-top: -20px;
-
-  background: white; 
-
-  padding: 0px; 
-
-  padding-top: 0;
-
-  box-shadow: 0 3px 10px; 
-  
-  box-sizing:border-box;
-  
-  min-height: 100%;
-  
-  position: relative;
-
-} 
-
- 
-
-/*navigation bar */ 
-
- 
-
- 
-
- 
-
-li {  
-
-  display: inline; 
-
-} 
-
-li.cousework-list {
-
-  display: block;
-  list-style:;
-
-
- }
-
-.topnav a { 
-
- float:  block; 
-
-text-align: center; 
-
- text-decoration: none; 
-
- margin-top: 0px; 
-
- background-color: none;
-
-  padding: 30px;
-
-
-
-} 
-
- 
- 
 
 header { 
 
@@ -111,8 +42,6 @@ header {
 .sub-header {
  font-style: italic;
  font-size: 80%;
-
-
 }
 
 
@@ -143,9 +72,31 @@ header {
 } 
 
 
+.content { 
 
+  width:960px; 
+  
+  max-width: 100%;
 
+  margin: auto; 
 
+  margin-top: -20px;
+
+  background: white; 
+
+  padding: 0px; 
+
+  padding-top: 0;
+
+  box-shadow: 0 3px 10px; 
+  
+  box-sizing:border-box;
+  
+  min-height: 100%;
+  
+  position: relative;
+
+} 
 
 /*NAV/Logo-Subheading*/
 
@@ -169,62 +120,149 @@ header {
   margin-top: 0;
 }
 
-
- 
-
-.footer { 
-
-  position: absolute; 
-
-  bottom: 0; 
-
-  width: 100%; 
-
-  background-color: #B3C3D0; 
-
-  max-height: 100%; 
-
-  max-width: 960px; 
- 
-  box-sizing: border-box;
-
-  height: 60px;
-  
-  border-top: 1px solid #333333;
-  margin-top: 30 px;
- 
-
-} 
-
-.footer-text {
-
-  font-size: 80%; 
-  color: gray; 
-  text-align: center;
-  margin-top: 30px;
-}
-
-
-
-
+/* Nav Bar */ 
 
 ul { 
 
   font: 14px Georgia, Times, serif; 
-
   text-align: center; 
-
   letter-spacing: 0.1em; 
-
-  display: flex;
-
-  justify-content: space-around;
-
-  margin: 0 20px;
-
-  color: red;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
 } 
 
+
+li {  
+
+  display: inline; /* centers nav bar*/
+} 
+
+li.cousework-list {
+
+  display: block;
+  list-style-type: none;
+
+ }
+
+
+.topnav a { 
+
+float: block; 
+
+text-align: center; 
+
+text-decoration: none; 
+
+ margin-top: 0px; 
+
+ background-color: none;
+
+ padding: 30px;
+ 
+ overflow: hidden;
+
+} 
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 660px) {
+ 
+  .topnav a {
+
+    display: block;
+    width: 100%;
+    background-color: none;
+    margin: 0px;
+    padding: 10px
+
+  }
+
+  .flex-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin:auto; 
+    max-width: 100%;
+    max-height: 80%;
+    padding: 0;
+    } 
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border-color: none;
+      border: none;
+      font-size: 90%;
+      max-width: 100%;
+    }
+    
+    main { 
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+      max-width: 100%;
+  
+    
+    } 
+    .flex-container-left { 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+    }
+
+      .resume-container1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+      }
+  
+ .resume-side1 {
+  min-width:100%;
+  margin: auto;
+ }
+    .index-image {
+     min-width:100%;
+     margin: auto;
+    
+    }
+     
+    .polaroid {
+    width: 200px;
+     margin: auto;
+     height: auto;
+
+    }
+
+    .polaroid-portfolio-page { 
+
+      width: 225px; 
+
+      margin: auto; 
+
+      height: auto;
+    }
+
+  }
+    @media screen and (max-width: 820px) {
+    
+      footer {
+
+    } 
+  
+  } 
+
+
+
+
+
+
+ 
 
 
 /* unvisited link */ 
@@ -279,7 +317,34 @@ a:active {
   }
  
 
-/* Logo Header */ 
+.footer { 
+
+  position: absolute; 
+
+  bottom: 0; 
+
+  width: 100%; 
+
+  background-color: #B3C3D0; 
+
+  max-height: 100%; 
+  max-width: 960px; 
+  box-sizing: border-box;
+  height: 60px; 
+  border-top: 1px solid #333333;
+
+} 
+
+.footer-text {
+
+  font-size: 90%; 
+  color: #261f17; 
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
 
  
 img.floral-border {
@@ -288,58 +353,35 @@ img.floral-border {
 
   margin-top: 0px;
 
-
 }
  
- 
-
 .index-image {
- 
+  max-width: 100%;
   padding: 20px;
 
 }
 
-
- 
+/*index paage-parent*/
 
 main { 
 
-  display: flex; 
-
-  justify-content: flex-start; 
+  display: flex;
 
   padding: 32px; 
 
 } 
-
- 
- 
- 
- 
- 
- 
- 
- 
 
 .flex-container-left { 
 
   display:flex; 
 
   flex-wrap: wrap;
-
-  margin:100px; 
-  
+   margin:50px; 
   margin-top:10px;
-
-  background-color: none; 
-
-  border: 2px solid; 
-
+  max-width: 100%;
   border-color: #000; 
 
 } 
-
- 
 
 .flex-container > div { 
 
@@ -351,63 +393,27 @@ main {
 
 .flex-container-right { 
   display:flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin:0 10px 10px 10px; 
+  max-width: 100%;
   } 
 
  
  
  
 .section {
-  border:0;
-  min-width:350px;
-  margin:auto auto;
-  margin-top:100px;
+  border:none;
+  width:350px;
+  max-width: 100%;
+  margin:auto;
+  padding: 5px;
+  
   
  }
 
-p.main { 
-
-  font-family: Arial, Verdana, sans-serif; 
-
-  font-weight: lighter; 
-
-  font-size: 14px; 
-
-  color: #66666A; 
-
-  position: absolute; 
-
-  top: 50%; 
-
-  right: -15%; 
-
-  transform: translate(-50%, 15%); 
-
-} 
 
  
-
-p.main-contact { 
-
-  font-family: Arial, Verdana, sans-serif; 
-
-  font-weight: lighter; 
-
-  font-size: 16px; 
-
-  color: #66666A; 
-
-  position: fixed; 
-
-  top: 50%; 
-
-  right: -15%; 
-
-  transform: translate(-50%, 15%); 
-
-} 
-
  
 
 .container { 
@@ -510,13 +516,13 @@ figure img {
 
     }
 
-
+/*port page*/
 .subhead {
 
 font-family: Georgia, 'Times New Roman', Times, serif; 
 font:100%;
-font-style: 700;
 color: #333333; 
+font-weight: 600;
 }
 
 
@@ -524,15 +530,32 @@ color: #333333;
   background-color: #fff;
   padding: 1rem 1rem 4rem;
   box-shadow: 5px 8px 6px 3px #888888;
+  width: 225px;
+  height: auto;
+  margin: auto;
 }
 
+.polaroid-portfolio-page{
+  background-color: #e4e2e2;
+  padding: 1rem 1rem 4rem;
+  box-shadow: 0px 8px 6px 3px #888888;
+  padding:20px;
+  max-width: 100%;
+}
+
+
+
 .img-polaroid {
- width:100%;
+ width:220;
+  max-width:100%;
+ margin: auto;
+ border-color: 1px solid #333333;
 }
 
 figcaption {
   color: #000;
   text-align: center;
+  font-size: 75%;
 }
 
 
@@ -564,18 +587,12 @@ figcaption {
 
 } 
 
-list-style-type: none; /* Remove bullets */
-padding: 0; /* Remove padding */
-margin: 0; /* Remove margins */
+
 
 
 
 p.li {
   display:block;
-}
-
-
-
 }
 
 
@@ -610,10 +627,6 @@ max-width:75%;
     margin-bottom: 1.5em;
 
  }
-
-
-
-
 
 .form-input {
   border: 1.5px solid #999;
@@ -698,6 +711,7 @@ max-width:75%;
     textarea {
       height: 150px;
       resize:vertical;
+    }
 
 
  
